@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-image: url("images/war\ bg.jpg");
+    overflow: hidden;
+}
+
+/* Valdez, Samuel, C. */
+
+.characDisplay {
+    position: absolute; 
+    width:100%; 
+    height: 500px; 
+    bottom: 0%;
+}
+
+.lastLayer, .midLayer, .firstLayer{
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    right: 50;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastLayer{
+    position: absolute;
+    /* left: 4%; */
+    width: 103%;
+}
+
+.midLayer{
+    width: 66%;
+    left: 21%;
+    /* background-color: aqua; */
+}
+
+.firstLayer{
+    width: 30%;
+    left: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.firstLayer {
+    z-index: 3; 
+}
+
+.midLayer {
+    z-index: 2; 
+}
+
+.lastLayer {
+    z-index: 1; 
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain; 
+    transition: 0.2s ease-out;
+}
+
+.characDisplay:hover img{
+    filter: grayscale(1) blur(2px);
+}
+
+.characDisplay:hover img:hover{
+    filter: grayscale(0) blur(0) drop-shadow(0px 0px 5px rgba(255,255,255,0.5));
+    transform: scale(1.02,1.02);
+
+}
+
+/* 01010011 01100001 01101101 01110101 01100101 01101100 */
